@@ -1,0 +1,19 @@
+﻿@{
+    string message = ViewBag.Message; 
+}
+
+<div>
+    @if(message=="danger")
+    {
+        <div class="alert alert-danger">
+            <h3>Hesabınız onaylanmadı </h3>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-success">
+            <h3>Hesabınız başarıyla onaylandı</h3>
+        </div>
+    }
+
+</div>
